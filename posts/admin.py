@@ -6,6 +6,7 @@ from .models import Post
 class PostAdmin(admin.ModelAdmin):
     list_display= ['title','puplish_date']
     search_fields = ['title','content']
+    list_filter = ['puplish_date','author']
 
 
 
