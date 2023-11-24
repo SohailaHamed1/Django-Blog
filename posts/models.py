@@ -8,6 +8,7 @@ class Post(models.Model):
     content = models.TextField(max_length=50000)
     puplish_date = models.DateTimeField()
     tags = TaggableManager()
+    image = models.ImageField(upload_to='posts')
 
     def __str__(self):
         return self.title
